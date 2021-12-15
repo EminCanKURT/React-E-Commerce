@@ -75,7 +75,7 @@ function CategoryDetail() {
                                     <button type = "button" className = "btn btn-md btn-outline-danger" >Add to Cart</button>
                                         <h5> <span className='badge badge-danger'>  Rate: {iterate.rating.rate} {"|"} Count: {iterate.rating.count}  </span>  </h5>                                       
                                     </div>
-                                <p className="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                             </div>
                             </div>
                         </div>
@@ -151,7 +151,7 @@ function CategoryDetail() {
                                         <button type = "button" className = "btn btn-md btn-outline-danger" >Add to Cart</button>
                                             <h5> <span className='badge badge-danger'>  Rate: {iterate.rating.rate} {"|"} Count: {iterate.rating.count}  </span>  </h5>
                                     </div>
-                                    <p className="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                 </div>
                                 </div>
                             </div>
