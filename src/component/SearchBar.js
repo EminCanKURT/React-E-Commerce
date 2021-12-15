@@ -35,8 +35,7 @@ function SearchBar(props) {
         
        
         setText(text);
-        //console.log(e=>onChangeHandler(e.target.value))
-       
+   
        return (Product)          
     
     }

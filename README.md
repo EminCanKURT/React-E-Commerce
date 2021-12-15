@@ -8,6 +8,8 @@ npm i
 
 npm react-router-dom
 
+npm i axios
+
 ## Available Scripts
 
 In the project directory, you can run:
