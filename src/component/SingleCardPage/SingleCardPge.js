@@ -23,7 +23,7 @@ function SingleCardPge ()  {
             }
           )
       }, [SingleCard])
-   console.log(SingleCard);
+   
      
    if(error) {
        return <div>Error: {error.message}</div>
