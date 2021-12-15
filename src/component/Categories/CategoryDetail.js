@@ -65,7 +65,7 @@ function CategoryDetail() {
                             </div>
                             </Link>
                             <div className="col-md-auto">
-                            <div class="card-body" style={{cursor: "pointer"}}>
+                            <div className="card-body" style={{cursor: "pointer"}}>
                                 <h5 className="card-title" >{iterate.title}</h5>
                                 <ul className="list-group list-group-flush">
                                     <li className="list-group-item" style={{color : "red"}}>Price: {iterate.price}$</li>
@@ -141,7 +141,7 @@ function CategoryDetail() {
                                 </div>
                             </Link>    
                                 <div className="col-md-auto">
-                                <div class="card-body" style={{cursor: "pointer"}}>
+                                <div className="card-body" style={{cursor: "pointer"}}>
                                     <h5 className="card-title" >{iterate.title}</h5>
                                     <ul className="list-group list-group-flush">
                                         <li className="list-group-item" style={{color : "red"}}>Price: {iterate.price}$</li>
