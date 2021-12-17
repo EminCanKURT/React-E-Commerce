@@ -4,6 +4,7 @@ import {useState,useEffect} from 'react';
 function ProductsDetail() {
     const [error, setError] = useState(null);
     const [Products, setProdutcs] = useState([]);
+
     useEffect(() => {
         fetch('https://fakestoreapi.com/products')
           .then(res => res.json())
@@ -24,9 +25,11 @@ function ProductsDetail() {
         return (
             <div className = "row pt-7 " >
 
-                {Products.map((product) =>( 
+                {
+                
+                Products.map((product) =>( 
                     <div className = "col-lg-4" key = {product.id}>
-                    <div className= "card mb-4" >
+                    <div className= "card mb-4"  >
                         <div className = 'col-md-8 '>
                             
                              <Link to = {`/products/${product.id}`} >
@@ -38,7 +41,7 @@ function ProductsDetail() {
                                 <h6 className="card-title" > {product.title}</h6>
                                 <ul className="list-group list-group-flush">
                                     <li className="list-group-item"style={{color: "red"}}>Price: {product.price}$</li>
-                                    <li className="list-group-item" ><Link to = {`/categories/${product.category}`} style={{color : "red"}}>{product.category}</Link></li>    
+                                    <li className="list-group-item"   ><Link to = {`/categories/${product.category}`} style={{color : "red"}}>{product.category}</Link></li>    
                                 </ul>
                                 <div className = "d-flex justify-content-between align-items-center">
                                     <button type = "button" className = "btn btn-md btn-outline-danger" >Add to Cart</button>

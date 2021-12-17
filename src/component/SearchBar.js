@@ -2,14 +2,13 @@ import React from 'react';
 import axios from 'axios';
 import '../App.css'
 import {useState,useEffect} from 'react';
-
+import {Link} from "react-router-dom";
 
 function SearchBar(props) {
     const [Products, setProducts] = useState([]);
     const [text, setText] = useState([]);
     const [sugges, setSugges] = useState([]);
-   
-    
+
     useEffect(() => {
        const loadProduct = async () => {
            const res = await axios.get('https://fakestoreapi.com/products');
@@ -35,14 +34,16 @@ function SearchBar(props) {
         
        
         setText(text);
+       
    
        return (Product)          
     
     }
-    
+ 
+
     
     return (
-            <form onSubmit>
+            <form >
                 <div className='form-row mb-5  justify-content-end'>
                     <div className='col-auto'style={{marginTop : 10}}>
                         <input  type = "text"
@@ -54,12 +55,16 @@ function SearchBar(props) {
                             }, 100);
                         }}
                         className='form-control form-control-sm'
-                        placeholder={props.placeholder}/>
+                        placeholder={props.placeholder}
+                       
+                        />
                       
                         {
                             sugges && sugges.map((sugges,i) =>
-                            <div key ={i} className='suggestion col-md-auto justify-content-md-center '
+                            <Link to = {`products/${sugges.id}`} key ={i}>
+                            <div  className='suggestion col-md-auto justify-content-md-center '
                             onClick={() => onSuggestHandler(sugges.title)}> {sugges.title} </div>
+                            </Link>
                             )
                         }
                         

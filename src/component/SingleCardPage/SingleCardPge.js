@@ -5,6 +5,7 @@ import {useState,useEffect} from 'react';
 function SingleCardPge ()  {
   const [error, setError] = useState(null);
   const [id, setId] = useState([]);
+  
   // get id from Url
     let params = useParams();
     let SingleCard = params.id;

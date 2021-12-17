@@ -7,16 +7,17 @@ import { BrowserRouter, Routes , Route } from "react-router-dom";
 import SingleCardPage from "./component/SingleCardPage/SingleCardPge"
 import Navbar from './component/Navbar/Navbar';
 import Footer from './component/Footer/Footer';
-import CategoryDeatil from "./component/Categories/CategoryDetail"
+import CategoryDeatil from "./component/Categories/CategoryDetail";
+
 
 ReactDOM.render(
  
     <BrowserRouter>
      <Navbar/>
       <Routes>
-      <Route path = "/" element = {<App/>}/>
+      <Route exact path = "/" element = {<App/>}/>
       <Route path = "products/:id" element = {<SingleCardPage/>}/>
-      <Route path = "categories/:name" element = {<CategoryDeatil/>}/>
+      <Route  path = "categories/:name" element = {<CategoryDeatil/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
