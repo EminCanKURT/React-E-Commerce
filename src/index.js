@@ -8,8 +8,7 @@ import SingleCardPage from "./component/SingleCardPage/SingleCardPge"
 import Navbar from './component/Navbar/Navbar';
 import Footer from './component/Footer/Footer';
 import CategoryDeatil from "./component/Categories/CategoryDetail";
-
-
+import './css/styles.css';// For Login and Singin
 ReactDOM.render(
  
     <BrowserRouter>
